@@ -34,6 +34,9 @@ Kelompok T02
    **Jawaban**
    
    **Pada Foosha**
+   
+   ![Run Foosha](https://raw.githubusercontent.com/Herwindams24/Jarkom-Modul-2-T02-2021/main/Gambar/Foosha/chrome_JFysuv9QHq.png?)
+   
    1. Buat file .bashrc dengan mengetikan `nano /root/.bashrc`
    2. Pada file tersebut Ketikkan `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.212.0.0/16`. Di mana `192.212` merupakan prefix kelompok penulis.
    3. Ketikan `cat /etc/resolv.conf` untuk menampilkan IP DNS
@@ -46,7 +49,7 @@ Kelompok T02
 
  **Dokumentasi**
    1. Pada Foosha
-   
+   	![Image of bashrc](https://raw.githubusercontent.com/Herwindams24/Jarkom-Modul-2-T02-2021/main/Gambar/Foosha/bashrc.png)
    
    2. Pada Loguetown
    
@@ -137,6 +140,31 @@ Kelompok T02
    
    **Jawaban**
    
+   **Pada EnniesLobby**
+
+   1. Buka `/etc/bind/kaizoku/franky.ti2.com` lalu edit sebagai berikut:
+    
+       ```
+
+       ..
+
+       ```
+    
+   2. Comment dan tambahkan code line berikut pada `/etc/bind/named.conf.options`
+
+      ```
+      // dnssec-validation auto
+
+      allow-query{any;};
+      ```
+
+   3. Edit file /etc/bind/named.conf.local menjadi:
+
+
+
+   4. `service bind9 restart`
+   
+   **Pada Loguetown**
    
    
    **Dokumentasi**
