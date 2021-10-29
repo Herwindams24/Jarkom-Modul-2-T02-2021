@@ -275,7 +275,7 @@ Kelompok T02
 
 1. Ketikan script seperti pada gambar berikut
     
-   <img src="" width="500">
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no03_script.png?raw=true" width="500">
     
 2. Setelah itu, kembali ke terminal gns3 dan jalankan
     
