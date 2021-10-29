@@ -34,8 +34,8 @@ Kelompok T02
    **Jawaban**
    
    **Pada Foosha**
-
-    ![Image of Run Foosha](https://raw.githubusercontent.com/Herwindams24/Jarkom-Modul-2-T02-2021/main/Gambar/Foosha/chrome_JFysuv9QHq.png?)
+   
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Foosha/bashrc.png?raw=true" width="500">
 
    1. Buat file .bashrc dengan mengetikan `nano /root/.bashrc`
    2. Pada file tersebut Ketikkan `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.212.0.0/16`. Di mana `192.212` merupakan prefix kelompok penulis.
@@ -50,23 +50,29 @@ Kelompok T02
  **Dokumentasi**
    1. Pada Foosha
 
-        ![Image of bashrc](https://raw.githubusercontent.com/Herwindams24/Jarkom-Modul-2-T02-2021/main/Gambar/Foosha/bashrc.png)
-   
+        <img src="https://user-images.githubusercontent.com/57980125/139372087-e79da388-2b06-4517-ad0a-706e40168c7e.png" width="500">
+
    2. Pada Loguetown
    
-
+        <img src="https://user-images.githubusercontent.com/57980125/139371923-b752196e-8af0-4398-b1af-cf59126fec3e.png" width="500">
+        <img src="https://user-images.githubusercontent.com/57980125/139371989-2c1cecfd-52e2-45c8-a374-5f177f19f40b.png" width="500">
    
    3. Pada Skypie
    
-   
+       <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Skypie/no01_skypie.png?raw=true" width="500">
    
    4. Pada EnniesLobby
-   
-   
+    
+        <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/EnniesLobby/no01_EniesLobby.png?raw=true" width="500">
    
    5. Pada Water7
-
-
+   
+        <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Water7/no1_water7.png?raw=true" width="500">
+   
+   6. Pada Alabasta
+        
+        <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Alabasta/no01_alabasta.png?raw=true" width="500">
+       
 ---
 
 ## Nomor 02
