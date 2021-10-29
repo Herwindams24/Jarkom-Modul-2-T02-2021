@@ -344,8 +344,6 @@ Kelompok T02
 
 2. Pastikan sudah echo nameserver Skypie
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_install.png?raw=true" width="500">
-
 <img src ="https://user-images.githubusercontent.com/57980125/139377701-09568dc4-5142-4886-adfd-0013cde3726f.png" width="500">
 
 3. Cek konfigurasi menggunakan `host -t PTR "IP Skypie"`
@@ -353,8 +351,10 @@ Kelompok T02
         ```
         host -t PTR 192.212.2.4
         ```
-        
-Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com maka sukses
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_testing.png?raw=true" width="500">
+
+Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com seperti pada gambar, maka program sukses.
 
 ---
 
@@ -423,11 +423,15 @@ Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com maka sukses
    
 1. Pada client Loguetown pastikan pengaturan nameserver mengarah ke IP EniesLobby dan IP Water7
    
-   ![no05_nameserver]()
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/EnniesLobby/no05_Nameserver.png?raw=true" width="500">
 
-2. Lakukan ping ke franky.ti2.com pada client Loguetown. Jika ping berhasil maka konfigurasi DNS slave telah berhasil
-
-    ![no05_ping]()
+2. Lakukan ping ke franky.ti2.com pada client Loguetown. Jika ping berhasil maka konfigurasi DNS slave telah berhasil. Namun pada gambar IP yang dituju merupakan IP Skypie dikarenakan pada file script.sh, eksekusi program paling mengarah pada IP Skypie.
+    
+    ```
+    ping franky.ti2.com
+    ```
+    
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no05_Loguetown.png?raw=true" width="500">
 
 
 ## No 06
@@ -532,6 +536,7 @@ Setelah itu terdapat subdomain mecha.franky.yyy.com dengan alias www.mecha.frank
     ```
 
 **Loguetown**
+
 
 ## No 07
 
