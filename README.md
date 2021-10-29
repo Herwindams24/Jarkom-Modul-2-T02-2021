@@ -873,7 +873,7 @@ Akan tetapi, pada folder /public, Luffy ingin hanya dapat melakukan directory li
 lynx www.super.franky.ti2.com/public
 ```
 
-<img src="" width="500">
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no11.png?raw=true" width="500">
 
 ## No 12
 
@@ -908,7 +908,7 @@ Tidak hanya itu, Luffy juga menyiapkan error file 404.html pada folder /error un
 lynx www.super.franky.ti2.com/error404
 ```
 
-<img src="" width="500">
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no12.png?raw=true" width="500">
 
 ## No 13
 
@@ -946,7 +946,7 @@ Luffy juga meminta Nami untuk dibuatkan konfigurasi virtual host. Virtual host i
 lynx www.super.franky.ti2.com/js
 ```
 
-<img src="" width="500">
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no13.png?raw=true" width="500">
 
 ## No 14
 
