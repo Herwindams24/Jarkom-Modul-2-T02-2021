@@ -369,11 +369,11 @@ Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com maka sukses
    
    1. Edit zone franky.ti2.com maupun zone super.franky.ti2.com dengan menggantikan IP pada bagian also-notify dan allow-transfer dengan IP Water7, yaitu: ``192.212.2.3``
       
-      ![no05_DNSSLAVE]()
+      <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/EnniesLobby/no05_DNSSlave.png?raw=true" width="500">
 
    2. Dikarenakan pada zone franky.ti2.com penulis menggunakan tanda ``>`` yang menandakan isi pada file ``named.conf.local`` tersebut akan di overwrite sehingga isi sebelumnya hilang, maka penulis akan menambahkan zone untuk ``2.212.192.in-addr.arpa``
 
-      ![no05_2.212.192.in-addr.arpa]()
+      <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/EnniesLobby/no05_2.212.192.in-addr.arpa.png?raw=true" width="500">
    
    3. Restart service bind9
         
@@ -387,6 +387,8 @@ Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com maka sukses
         ```
         service bind9 stop
         ```
+        
+        <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/EnniesLobby/no05_stopService.png?raw=true" width="500">
 
 **Water7**
 
