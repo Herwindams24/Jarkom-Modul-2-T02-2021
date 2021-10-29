@@ -537,6 +537,17 @@ Setelah itu terdapat subdomain mecha.franky.yyy.com dengan alias www.mecha.frank
 
 **Loguetown**
 
+1. Lakukan ping pada subdomain delegasi
+```
+ping mecha.franky.ti2.com
+```
+
+2. Lakukan ping pada alias subdomain delegasi
+```
+ping www.mecha.franky.ti2.com
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no06_Loguetown.png?raw=true" width="500">
 
 ## No 07
 
@@ -608,6 +619,14 @@ Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Wa
 
 **Loguetown**
 
+Lakukan ping padasubdomain general.mecha
+```
+ping general.mecha.franky.ti2.com
+ping www.general.mecha.franky.ti2.com
+```
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no07_Loguetown.png?raw=true" width="500">
+
+# Web Server
 
 ## No 08
 
@@ -615,7 +634,7 @@ Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Wa
 Setelah melakukan konfigurasi server, maka dilakukan konfigurasi Webserver. Pertama dengan webserver www.franky.yyy.com. Pertama, luffy membutuhkan webserver dengan DocumentRoot pada /var/www/franky.yyy.com.
 
 ### Jawaban
-**TAHAP PERSIAPAN**
+**Tahap Persiapan**
 
 1. Update node ubuntu
     
@@ -687,7 +706,7 @@ Setelah itu, Luffy juga membutuhkan agar url www.franky.yyy.com/index.php/home d
 ### Jawaban
 **TAHAP PERSIAPAN**
 
-1. Install unzip pada Ubuntu
+1. Install unzip pada Ubuntu Skypie
    
    ```
    apt-get install unzip
@@ -699,7 +718,7 @@ Setelah itu, Luffy juga membutuhkan agar url www.franky.yyy.com/index.php/home d
     apt-get install wget
     
     ```
-**Directory Alias**
+**Directory Alias pada Skypie**
 1. Unduh  franky.zip
     
     ```
@@ -750,13 +769,30 @@ Setelah itu, Luffy juga membutuhkan agar url www.franky.yyy.com/index.php/home d
 
 7. Restart Apache2
 
+**Testing pada Lougetown**
+1. Tanpa menghilangkan index.php
+   
+   ```
+   lynx www.franky.ti2.com/index.php/home
+   ```
+   
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no09_01.png?raw=true" width="500">
+   
+2. Sesuai minta soal (tanpa index.php)
+   
+   ```
+   lynx www.franky.ti2.com/home
+   ```
+   
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no09_02.png?raw=true" true="500">
+   
 ## No 10
 
 ### Soal
 Setelah itu, pada subdomain www.super.franky.yyy.com, Luffy membutuhkan penyimpanan aset yang memiliki DocumentRoot pada /var/www/super.franky.yyy.com.
 
 ### Jawaban
-**Inisialisasi Documment Root**
+**Documment Root pada Skype**
 1. Inisialisasi DocumentRoot /var/www/super.franky.ti2.com
     
     ```
@@ -830,6 +866,14 @@ Akan tetapi, pada folder /public, Luffy ingin hanya dapat melakukan directory li
     ```
 5. Restart Apache2
 
+**Testing pada Lougetown**
+
+1. Uji coba directory listing public
+```
+lynx www.super.franky.ti2.com/public
+```
+
+<img src="" width="500">
 
 ## No 12
 
@@ -856,6 +900,16 @@ Tidak hanya itu, Luffy juga menyiapkan error file 404.html pada folder /error un
         </VirtualHost>" > /etc/apache2/sites-available/super.franky.ti2.com.conf
     ```
 2. Restart Apache2
+
+**Testing pada Lougetown**
+
+1. Uji coba error 404
+```
+lynx www.super.franky.ti2.com/error404
+```
+
+<img src="" width="500">
+
 ## No 13
 
 ### Soal
@@ -884,6 +938,15 @@ Luffy juga meminta Nami untuk dibuatkan konfigurasi virtual host. Virtual host i
             </VirtualHost>" > /etc/apache2/sites-available/super.franky.ti2.com.conf
     ```
 2. Restart Apache2
+
+**Testing pada Lougetown**
+
+1. Uji coba directory js
+```
+lynx www.super.franky.ti2.com/js
+```
+
+<img src="" width="500">
 
 ## No 14
 
@@ -916,6 +979,30 @@ Dan Luffy meminta untuk web www.general.mecha.franky.yyy.com hanya bisa diakses 
     rm /root/general.mecha.franky.zip
     ```
 7. Restart Apache2
+
+1. Uji coba directory port 15500 dan 15000
+```
+lynx general.mecha.franky.ti2.com:15500
+```
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_01.png?raw=true" width="500">
+
+```
+lynx www.general.mecha.franky.ti2.com:15500
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_02.png?raw=true" width="500">
+
+```
+lynx general.mecha.franky.ti2.com:15000
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_03.png?raw=true" width="500">
+
+```
+lynx www.general.mecha.franky.ti2.com:15000
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_04.png?raw=true" width="500">
 
 ## Nomor 15
 
