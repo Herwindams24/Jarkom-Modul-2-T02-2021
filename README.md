@@ -176,14 +176,18 @@ Kelompok T02
  
    **Pada Client**
    
-   Lakukan perubahan pada script.sh Lougetown dan Alabasta berupa nameserver menuju IP Enieslobby 192.212.2.2 untuk dapat mengakses dari domain yang telah kita buat.
-
+   Lakukan perubahan pada script.sh Lougetown dan Alabasta berupa nameserver menuju IP Enieslobby 192.212.2.2 untuk dapat mengakses dari domain yang telah kita buat. Perubahan dilakukan dengan cara:
+   
+   1. Ketikan `nano root/script.sh`
+   2. Di bawah  echo nameserver 192.168.122.1 > /etc/resolv.conf, ketikan:
    ```
    echo nameserver 192.212.2.2 > /etc/resolv.conf
    ```
+   3. Lakukan bash pada script.sh
+   4. ping franky.yyy.com beserta alias www.franky.yyy.com
    
-   **Dokumentasi**
-   
+   <img src="https://user-images.githubusercontent.com/57980125/139376191-8d77bcdb-40c8-4e70-8ab5-34b771d9978b.png" width="500">
+
 ---
 
 ## Nomor 03
@@ -269,10 +273,18 @@ Kelompok T02
    
    **Pada Loguetown**
 
+1. Ketikan script seperti pada gambar berikut
     
-
-   **Dokumentasi**
-   
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no03_script.png?raw=true" width="500">
+    
+2. Setelah itu, kembali ke terminal gns3 dan jalankan
+    
+ ```
+ bash /root/script.sh
+ ```
+3. Ping subdomain super.franky.yyy.com beserta alias www.super.franky.yyy.com
+    
+   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no3_Loguetown.png?raw=true" width="500">
    
 ---
 
