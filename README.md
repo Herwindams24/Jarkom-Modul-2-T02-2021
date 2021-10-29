@@ -1146,7 +1146,7 @@ echo "
 3. restart service apache2 dengan `service apache2 restart`  
 
 **Loguetown**     
-1. Ketikan 
+1. Ketikan command berikut pada Client
 ```
 lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
 ```
