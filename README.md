@@ -275,7 +275,7 @@ Kelompok T02
 
 1. Ketikan script seperti pada gambar berikut
     
-   <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no03_script.png?raw=true" width="500">
+   <img src="" width="500">
     
 2. Setelah itu, kembali ke terminal gns3 dan jalankan
     
@@ -338,9 +338,23 @@ Kelompok T02
    
    **Loguetown**
 
+1. Install dnsutils pada script.sh
 
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_install.png?raw=true" width="500">
 
-   **Dokumentasi**
+2. Pastikan sudah echo nameserver Skypie
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_install.png?raw=true" width="500">
+
+<img src ="https://user-images.githubusercontent.com/57980125/139377701-09568dc4-5142-4886-adfd-0013cde3726f.png" width="500">
+
+3. Cek konfigurasi menggunakan `host -t PTR "IP Skypie"`
+        
+        ```
+        host -t PTR 192.212.2.4
+        ```
+        
+Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com maka sukses
 
 ---
 
