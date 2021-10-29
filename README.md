@@ -1086,7 +1086,9 @@ Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.frank
 2. Melakukan restart service apache2 dengan `service apache2 restart`  
 
 **Loguetown**    
-lynx 192.212.2.4
+
+1. Ketikan `lynx 192.212.2.4`
+<img src="" width="">
 
 
 ## Nomor 17
@@ -1144,6 +1146,10 @@ echo "
 3. restart service apache2 dengan `service apache2 restart`  
 
 **Loguetown**     
+1. Ketikan 
+```
 lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
+```
+<img src="" width="">
 
 ## Kendala
