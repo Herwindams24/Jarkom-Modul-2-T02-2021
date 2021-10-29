@@ -909,3 +909,147 @@ Dan Luffy meminta untuk web www.general.mecha.franky.yyy.com hanya bisa diakses 
     rm /root/general.mecha.franky.zip
     ```
 7. Restart Apache2
+
+## Nomor 15
+
+### Soal
+Dengan authentikasi username luffy dan password onepiece dan file di `/var/www/general.mecha.franky.yyy`
+
+## Jawaban  
+**Skypie**     
+1. Jalankan Command 
+```
+htpasswd -c -b /etc/apache2/.htpasswd luffy onepiece
+```
+2. Konfigurasi file `/etc/apache2/sites-available/general.mecha.franky.ti2.com.conf`
+```
+<VirtualHost *:15000>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/general.mecha.franky.ti2.com
+        ServerName general.mecha.franky.ti2.com
+        ServerAlias www.general.mecha.franky.ti2.com
+
+        <Directory \"/var/www/general.mecha.franky.ti2.com\">
+                AuthType Basic
+                AuthName \"Restricted Content\"
+                AuthUserFile /etc/apache2/.htpasswd
+                Require valid-user
+        </Directory>
+
+        ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+<VirtualHost *:15500>        
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/general.mecha.franky.ti2.com
+        ServerName general.mecha.franky.ti2.com
+        ServerAlias www.general.mecha.franky.ti2.com
+        
+        <Directory \"/var/www/general.mecha.franky.ti2.com\">
+                AuthType Basic
+                AuthName \"Restricted Content\"
+                AuthUserFile /etc/apache2/.htpasswd
+                Require valid-user
+        </Directory>
+        
+        ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```    
+3. Restart service apache2 
+```
+service apache2 restart
+```   
+
+**Loguetown**   
+
+
+
+## Nomor 16
+
+### Soal
+Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.franky.yyy.com`
+
+### Jawaban Soal 16  
+**Skypie**   
+1. Konfigurasi file `/etc/apache2/sites-available/000-default.conf` sebagai berikut     
+```
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        RewriteEngine On
+        RewriteCond %{HTTP_HOST} !^franky.ti2.com$
+        RewriteRule /.* http://franky.ti2.com/ [R]
+
+        ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+```    
+2. Melakukan restart service apache2 dengan `service apache2 restart`  
+
+**Loguetown**    
+lynx 192.212.2.4
+
+
+## Nomor 17
+
+### Soal
+Dikarenakan Franky juga ingin mengajak temannya untuk dapat menghubunginya melalui website `www.super.franky.yyy.com`, dan dikarenakan pengunjung web server pasti akan bingung dengan randomnya images yang ada, maka Franky juga meminta untuk mengganti request gambar yang memiliki substring `“franky”` akan diarahkan menuju `franky.png`. Maka bantulah Luffy untuk membuat konfigurasi dns dan web server ini!
+
+### Jawaban   
+**Skypie**   
+1. konfigurasi file `/var/www/super.franky.ti2.com/.htaccess` dengan     
+```
+echo "
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/public/images/(.*)franky(.*)
+RewriteCond %{REQUEST_URI} !/public/images/franky.png
+RewriteRule /.* http://super.franky.ti2.com/public/images/franky.png [L]
+"
+```    
+2. konfigurasi file `/etc/apache2/sites-available/super.franky.ti2.com.conf` dengan     
+```
+echo "
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/super.franky.ti2.com
+        ServerName super.franky.ti2.com
+        ServerAlias www.super.franky.ti2.com
+
+        ErrorDocument 404 /error/404.html
+        ErrorDocument 500 /error/404.html
+        ErrorDocument 502 /error/404.html
+        ErrorDocument 503 /error/404.html
+        ErrorDocument 504 /error/404.html
+
+        <Directory /var/www/super.franky.ti2.com/public>
+                Options +Indexes
+        </Directory>
+
+        Alias \"/js\" \"/var/www/super.franky.ti2.com/public/js\"
+
+        <Directory /var/www/super.franky.ti2.com>
+                Options +FollowSymLinks -Multiviews
+                AllowOverride All
+        </Directory>
+        ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+
+        <Directory /var/www/franky.ti2.com>
+                Options +FollowSymLinks -Multiviews
+                AllowOverride All
+        </Directory>
+</VirtualHost>
+"
+```    
+3. restart service apache2 dengan `service apache2 restart`  
+
+**Loguetown**     
+lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
+
+## Kendala
