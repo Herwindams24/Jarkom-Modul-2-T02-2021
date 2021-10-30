@@ -1037,25 +1037,25 @@ service apache2 restart
 ```
 lynx general.mecha.franky.ti2.com:15500
 ```
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903917073040818206/unknown.png?width=859&height=473" width="500">
 
 ```
 lynx www.general.mecha.franky.ti2.com:15500
 ```
 
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903916985321156608/unknown.png" width="500">
 
 ```
 lynx general.mecha.franky.ti2.com:15000
 ```
 
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903916885362491392/unknown.png" width="500">
 
 ```
 lynx www.general.mecha.franky.ti2.com:15000
 ```
 
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903916698049069066/unknown.png" width="500">
 
 
 ## Nomor 16
