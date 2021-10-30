@@ -218,7 +218,7 @@ Kelompok T02
             @       IN      A       192.212.2.2 ; IP EniesLobby
             www     IN      CNAME   franky.ti2.com.
             super   IN      A       192.212.2.4 ; IP Skypie
-            " > /etc/bind/kaizoku/franky.ti9.com
+            " > /etc/bind/kaizoku/franky.ti2.com
 
        ```
     
@@ -406,7 +406,7 @@ Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com seperti pada g
     echo 'zone "franky.ti2.com"{
         type slave;
         masters { 192.212.2.2;  }; 
-        file "/var/lib/bind/franky.ti9.com";
+        file "/var/lib/bind/franky.ti2.com";
     };' > /etc/bind/named.conf.local
    ```
 
@@ -558,7 +558,7 @@ Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Wa
 
 **Water7**
 
-1. Buat Subdomain ``general.mecha.franky.ti9.com``
+1. Buat Subdomain ``general.mecha.franky.ti2.com``
     
     ```
    
@@ -580,7 +580,7 @@ Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Wa
     ```
 
 2. Restart Bind9
-3. Buat atau konfigurasi Zona Subdomain www.general.mecha.franky.ti9.com
+3. Buat atau konfigurasi Zona Subdomain www.general.mecha.franky.ti2.com
     
     ```
     echo 'zone "general.mecha.franky.ti2.com"{
@@ -956,8 +956,8 @@ Dan Luffy meminta untuk web www.general.mecha.franky.yyy.com hanya bisa diakses 
 ### Jawaban
 **Listen Port**
 1. Listen Port 80, 15000, dan 15500
-2. Buat Virtual Host
-3. Aktifkan konfigurasi   
+2. Membuat VirtualHost baru dengan port 15000 dan 15500
+3. Aktifkan konfigurasi   dengan command a2ensite terhadap general.mecha.franky.ti2.com
     
     ```
     a2ensite general.mecha.franky.ti2.com.conf
