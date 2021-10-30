@@ -1249,3 +1249,5 @@ Dikarenakan Franky juga ingin mengajak temannya untuk dapat menghubunginya melal
     <img src="https://media.discordapp.net/attachments/759187114985652264/903914670535094312/unknown.png" true="500">
 
 ## Kendala
+
+Dalam pengerjaan praktikum ini, tidak ditemukan kendala berarti. Semua telah dapat terselesaikan saat laporan praktikum selesai.
