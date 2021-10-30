@@ -11,7 +11,7 @@ Kelompok T02
 
    **Soal**
     
-   EniesLobby akan dijadikan sebagai DNS Master, Water7 akan dijadikan DNS Slave, dan Skypie akan digunakan sebagai Web Server. Terdapat 2 Client yaitu Loguetown, dan Alabasta
+   EniesLobby akan dijadikan sebagai DNS Master, Water7 akan dijadikan DNS Slave, dan Skypie akan digunakan sebagai Web Server. Terdapat 2 Client yaitu Loguetown, dan Alabasta.
 
    **Jawaban**
    
@@ -1064,12 +1064,17 @@ Dengan authentikasi username luffy dan password onepiece dan file di `/var/www/g
     ```
     lynx general.mecha.franky.ti2.com:15500
     ```
+    
+    Sebelumnya, akan diminta untuk mengetikan username dan password. Di mana Usernamenya adalah luffy dan passwordnya adalah onepiece.
+    
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/username01.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/password.png?raw=true" width="500">
     <img src="https://media.discordapp.net/attachments/759187114985652264/903917073040818206/unknown.png?width=859&height=473" width="500">
 
     ```
     lynx www.general.mecha.franky.ti2.com:15500
     ```
-
+    <img src="https://user-images.githubusercontent.com/57980125/139528255-f457ef0a-63a1-4e9a-a186-dd712a25c05f.png" width="500">
     <img src="https://media.discordapp.net/attachments/759187114985652264/903916985321156608/unknown.png" width="500">
 
     ```
