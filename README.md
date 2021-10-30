@@ -15,16 +15,77 @@ Kelompok T02
 
    **Jawaban**
    
-   1. Dikarenakan soal mirip dengan latihan soal, buat topologi yang sama seperti latihan soal. Selanjutnya tambahkan node baru yaitu Skypie yang bertindak sebagai Web Server nantinya. 
-   2. Pada node skypie, konfigurasikan:
-   
+   1. Buat sebuah node (NAT1) yang terhubung dengan internet dan nantinya akan tersambung dengan router foosha melalui interface nat0 menuju interface eth0. Edit konfigurasi sebagai berikut:
       ```
+      auto eth0
+      iface eth0 inet dhcp
+
+      auto eth1
+      iface eth1 inet static
+	     address 192.212.1.1
+	     netmask 255.255.255.0
+
+      auto eth2
+      iface eth2 inet static
+	     address 192.212.2.1
+	     netmask 255.255.255.0
+      ```
+   2. Buat topologi dengan menambahkan node ethernet switch dan ubuntu (EniesLobby, Water7, Skypie, Loguetown, dan Alabasta).
+   
+      <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/chrome_XeHpmfWZRK.png?raw=true" width="500">
+      
+      
+   3. Setting network dari masing-masing node ubuntu pada Edit network configuration
+      
+      * Node Lougetown (Client)
+   
+        ```
+         auto eth0
+         iface eth0 inet static
+	        address 192.212.1.2
+	        netmask 255.255.255.0
+	        gateway 192.212.1.1
+        ```
+        
+       * Node Alabasta (Client)
+   
+        ```
+         auto eth0
+         iface eth0 inet static
+	        address 192.212.1.3
+	        netmask 255.255.255.0
+	        gateway 192.212.1.1
+        ```
+        
+       * Node EniesLobby (DNS Master)
+   
+        ```
+         auto eth0
+         iface eth0 inet static
+	        address 192.212.2.2
+	        netmask 255.255.255.0
+	        gateway 192.212.2.1
+        ```
+        
+        * Node Water7 (DNS Slave)
+   
+        ```
+         auto eth0
+         iface eth0 inet static
+	        address 192.212.2.3
+	        netmask 255.255.255.0
+	        gateway 192.212.2.1
+        ```
+      
+      * Node Skypie (Web Server)
+   
+        ```
          auto eth0
          iface eth0 inet static
          address 192.212.2.4
          netmask 255.255.255.0
          gateway 192.212.2.1
-       ```
+        ```
 
 ## Nomor 01
    **Soal**
@@ -125,7 +186,7 @@ Kelompok T02
 
    6. Konfigurasi franky.ti2.com pada `/etc/bind/kaizoku/franky.ti2.com`
       * Semua yang berbau localhost ganti dengan `franky.ti2.com`
-      * Arahkan alamat IP ke `..` dengan ip `..` yang di sini sebagai master domain. 
+      * Arahkan alamat IP ke menuju ke IP dari EniesLobby yaitu `192.212.2.2` yang di sini sebagai master domain. 
       
       ```
       echo "\
