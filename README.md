@@ -416,7 +416,7 @@ Kelompok T02
 
     <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_testing.png?raw=true" width="500">
 
-Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com seperti pada gambar, maka program sukses.
+Jika menampilkan 2.2.212.192.in-addr.arpa. points to franky.ti2.com seperti pada gambar, maka program sukses.
 
 ---
 
@@ -586,8 +586,8 @@ Setelah itu terdapat subdomain mecha.franky.yyy.com dengan alias www.mecha.frank
                          604800 )       ; Negative Cache TTL
         ;
         @         IN      NS      mecha.franky.ti2.com.
-        @         IN      A       10.46.2.3
-        www       IN      A       10.46.2.3
+        @         IN      A       192.212.2.3
+        www       IN      A       192.212.2.3
     " > /etc/bind/sunnygo/mecha.franky.ti2.co
     ```
 
