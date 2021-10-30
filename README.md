@@ -119,7 +119,7 @@ Kelompok T02
 
    5. Copy dari db.local
     
-      ```typescript
+      ```
       /etc/bind/db.local /etc/bind/kaizoku/franky.ti2.com
       ```
 
@@ -127,7 +127,7 @@ Kelompok T02
       * Semua yang berbau localhost ganti dengan `franky.ti2.com`
       * Arahkan alamat IP ke `..` dengan ip `..` yang di sini sebagai master domain. 
       
-      ```typescript
+      ```
       echo "\
       \$TTL    604800
         @       IN      SOA     franky.ti2.com. root.franky.ti2.com. (
@@ -180,13 +180,13 @@ Kelompok T02
    
    1. Ketikan `nano root/script.sh`
    2. Di bawah  echo nameserver 192.168.122.1 > /etc/resolv.conf, ketikan:
-   ```
-   echo nameserver 192.212.2.2 > /etc/resolv.conf
-   ```
+        ```
+        echo nameserver 192.212.2.2 > /etc/resolv.conf
+        ```
    3. Lakukan bash pada script.sh
    4. ping franky.yyy.com beserta alias www.franky.yyy.com
    
-   <img src="https://user-images.githubusercontent.com/57980125/139376191-8d77bcdb-40c8-4e70-8ab5-34b771d9978b.png" width="500">
+        <img src="https://user-images.githubusercontent.com/57980125/139376191-8d77bcdb-40c8-4e70-8ab5-34b771d9978b.png" width="500">
 
 ---
 
@@ -279,9 +279,10 @@ Kelompok T02
     
 2. Setelah itu, kembali ke terminal gns3 dan jalankan
     
- ```
- bash /root/script.sh
- ```
+    ```
+    bash /root/script.sh
+    ```
+
 3. Ping subdomain super.franky.yyy.com beserta alias www.super.franky.yyy.com
     
    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no3_Loguetown.png?raw=true" width="500">
@@ -340,11 +341,11 @@ Kelompok T02
 
 1. Install dnsutils pada script.sh
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_install.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_install.png?raw=true" width="500">
 
 2. Pastikan sudah echo nameserver Skypie
 
-<img src ="https://user-images.githubusercontent.com/57980125/139377701-09568dc4-5142-4886-adfd-0013cde3726f.png" width="500">
+    <img src ="https://user-images.githubusercontent.com/57980125/139377701-09568dc4-5142-4886-adfd-0013cde3726f.png" width="500">
 
 3. Cek konfigurasi menggunakan `host -t PTR "IP Skypie"`
         
@@ -352,7 +353,7 @@ Kelompok T02
         host -t PTR 192.212.2.4
         ```
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_testing.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no04_testing.png?raw=true" width="500">
 
 Jika menampilkan 2.2.46.10.in-addr.arpa. points to franky.ti2.com seperti pada gambar, maka program sukses.
 
@@ -538,16 +539,15 @@ Setelah itu terdapat subdomain mecha.franky.yyy.com dengan alias www.mecha.frank
 **Loguetown**
 
 1. Lakukan ping pada subdomain delegasi
-```
-ping mecha.franky.ti2.com
-```
-
+    ```
+    ping mecha.franky.ti2.com
+    ```
 2. Lakukan ping pada alias subdomain delegasi
-```
-ping www.mecha.franky.ti2.com
-```
+    ```
+    ping www.mecha.franky.ti2.com
+    ```
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no06_Loguetown.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no06_Loguetown.png?raw=true" width="500">
 
 ## No 07
 
@@ -620,10 +620,10 @@ Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Wa
 **Loguetown**
 
 Lakukan ping padasubdomain general.mecha
-```
-ping general.mecha.franky.ti2.com
-ping www.general.mecha.franky.ti2.com
-```
+    ```
+    ping general.mecha.franky.ti2.com
+    ping www.general.mecha.franky.ti2.com
+    ```
 <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no07_Loguetown.png?raw=true" width="500">
 
 # Web Server
@@ -869,11 +869,12 @@ Akan tetapi, pada folder /public, Luffy ingin hanya dapat melakukan directory li
 **Testing pada Lougetown**
 
 1. Uji coba directory listing public
-```
-lynx www.super.franky.ti2.com/public
-```
+    
+    ```
+    lynx www.super.franky.ti2.com/public
+    ```
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no11.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no11.png?raw=true" width="500">
 
 ## No 12
 
@@ -904,11 +905,11 @@ Tidak hanya itu, Luffy juga menyiapkan error file 404.html pada folder /error un
 **Testing pada Lougetown**
 
 1. Uji coba error 404
-```
-lynx www.super.franky.ti2.com/error404
-```
+    ```
+    lynx www.super.franky.ti2.com/error404
+    ```
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no12.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no12.png?raw=true" width="500">
 
 ## No 13
 
@@ -942,11 +943,11 @@ Luffy juga meminta Nami untuk dibuatkan konfigurasi virtual host. Virtual host i
 **Testing pada Lougetown**
 
 1. Uji coba directory js
-```
-lynx www.super.franky.ti2.com/js
-```
+    ```
+    lynx www.super.franky.ti2.com/js
+    ```
 
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no13.png?raw=true" width="500">
+    <img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no13.png?raw=true" width="500">
 
 ## No 14
 
@@ -956,24 +957,49 @@ Dan Luffy meminta untuk web www.general.mecha.franky.yyy.com hanya bisa diakses 
 ### Jawaban
 **Listen Port**
 1. Listen Port 80, 15000, dan 15500
+    ```
+    echo "\
+        Listen 80
+        Listen 15000
+        Listen 15500
+    <IfModule ssl_module>
+        Listen 443
+    </IfModule>
+
+    <IfModule mod_gnutls.c>
+        Listen 443
+    </IfModule>" > /etc/apache2/ports.conf
+    ```
 2. Membuat VirtualHost baru dengan port 15000 dan 15500
+    ```
+    echo "\
+        <VirtualHost *:15000 *:15500>
+            ServerAdmin webmaster@localhost
+            DocumentRoot /var/www/general.mecha.franky.ti2.com
+            ServerName general.mecha.franky.ti2.com
+            ServerAlias www.general.mecha.franky.ti2.com
+            ErrorLog \${APACHE_LOG_DIR}/error.log
+            CustomLog \${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>" > /etc/apache2/sites-available/general.mecha.franky.ti2.com.conf
+    ```
+
 3. Aktifkan konfigurasi   dengan command a2ensite terhadap general.mecha.franky.ti2.com
     
     ```
     a2ensite general.mecha.franky.ti2.com.conf
     ```
-4. Buat directory baru
+4. Buat directory baru  yang akan menampung asset 
     
     ```
     mkdir /var/www/general.mecha.franky.ti2.com
     ```
-5. Unduh file .zip dari github, lalu unzip file tersebut ke dalam folder yang telah dibuat sebelumnya.
+5. Unduh file .zip dan unzip file ke dalam folder yang telah dibuat sebelumnya. File ini berisikan konten yang akan ditampilkan untuk general.mecha.franky.ti2.com yang diunduh dari file requirement pada soal shift.  
     
     ```
     wget https://github.com/FeinardSlim/Praktikum-Modul-2-Jarkom/raw/main/general.mecha.franky.zip
     unzip -j /root/general.mecha.franky.zip -d /var/www/general.mecha.franky.ti2.com
     ```
-6. Hapus file .zip
+6. Hapus file .zip agar penyimpanan tidak menumpuk
     
     ```
     rm /root/general.mecha.franky.zip
@@ -987,13 +1013,14 @@ Dengan authentikasi username luffy dan password onepiece dan file di `/var/www/g
 
 ## Jawaban  
 **Skypie**     
-1. Jalankan Command 
-```
-htpasswd -c -b /etc/apache2/.htpasswd luffy onepiece
-```
-2. Konfigurasi file `/etc/apache2/sites-available/general.mecha.franky.ti2.com.conf`
-```
-<VirtualHost *:15000>
+1. Jalankan command untuk mendaftarkan autentikasinya.
+   
+    ```
+    htpasswd -c -b /etc/apache2/.htpasswd luffy onepiece
+    ```
+2. Konfigurasi ulang file virtualhost `/etc/apache2/sites-available/general.mecha.franky.ti2.com.conf` dengan menambahkan akses penggunaan .htaccess
+    ```
+    <VirtualHost *:15000>
 
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/general.mecha.franky.ti2.com
@@ -1009,8 +1036,8 @@ htpasswd -c -b /etc/apache2/.htpasswd luffy onepiece
 
         ErrorLog \${APACHE_LOG_DIR}/error.log
         CustomLog \${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-<VirtualHost *:15500>        
+    </VirtualHost>
+    <VirtualHost *:15500>        
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/general.mecha.franky.ti2.com
         ServerName general.mecha.franky.ti2.com
@@ -1025,37 +1052,37 @@ htpasswd -c -b /etc/apache2/.htpasswd luffy onepiece
         
         ErrorLog \${APACHE_LOG_DIR}/error.log
         CustomLog \${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-```    
+    </VirtualHost>
+    ```    
 3. Restart service apache2 
-```
-service apache2 restart
-```   
+    ```
+    service apache2 restart
+    ```   
 
 **Loguetown**   
 1. Uji coba directory port 15500 dan 15000
-```
-lynx general.mecha.franky.ti2.com:15500
-```
-<img src="https://media.discordapp.net/attachments/759187114985652264/903917073040818206/unknown.png?width=859&height=473" width="500">
+    ```
+    lynx general.mecha.franky.ti2.com:15500
+    ```
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903917073040818206/unknown.png?width=859&height=473" width="500">
 
-```
-lynx www.general.mecha.franky.ti2.com:15500
-```
+    ```
+    lynx www.general.mecha.franky.ti2.com:15500
+    ```
 
-<img src="https://media.discordapp.net/attachments/759187114985652264/903916985321156608/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903916985321156608/unknown.png" width="500">
 
-```
-lynx general.mecha.franky.ti2.com:15000
-```
+    ```
+    lynx general.mecha.franky.ti2.com:15000
+    ```
 
-<img src="https://media.discordapp.net/attachments/759187114985652264/903916885362491392/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903916885362491392/unknown.png" width="500">
 
-```
-lynx www.general.mecha.franky.ti2.com:15000
-```
+    ```
+    lynx www.general.mecha.franky.ti2.com:15000
+    ```
 
-<img src="https://media.discordapp.net/attachments/759187114985652264/903916698049069066/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903916698049069066/unknown.png" width="500">
 
 
 ## Nomor 16
@@ -1066,8 +1093,8 @@ Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.frank
 ### Jawaban Soal 16  
 **Skypie**   
 1. Konfigurasi file `/etc/apache2/sites-available/000-default.conf` sebagai berikut     
-```
-<VirtualHost *:80>
+    ```
+    <VirtualHost *:80>
 
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/html
@@ -1079,15 +1106,15 @@ Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.frank
         ErrorLog \${APACHE_LOG_DIR}/error.log
         CustomLog \${APACHE_LOG_DIR}/access.log combined
 
-</VirtualHost>
-```    
+    </VirtualHost>
+    ```    
 2. Melakukan restart service apache2 dengan `service apache2 restart`  
 
 **Loguetown**    
 
 1. Ketikan `lynx 192.212.2.4` dan akan muncul seperti pada gambar
-<img src="https://media.discordapp.net/attachments/759187114985652264/903916293068030013/unknown.png" width="500">
-<img src="https://media.discordapp.net/attachments/759187114985652264/903915481122099210/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903916293068030013/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903915481122099210/unknown.png" width="500">
 
 
 ## Nomor 17
@@ -1098,18 +1125,17 @@ Dikarenakan Franky juga ingin mengajak temannya untuk dapat menghubunginya melal
 ### Jawaban   
 **Skypie**   
 1. konfigurasi file `/var/www/super.franky.ti2.com/.htaccess` dengan     
-```
-echo "
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/public/images/(.*)franky(.*)
-RewriteCond %{REQUEST_URI} !/public/images/franky.png
-RewriteRule /.* http://super.franky.ti2.com/public/images/franky.png [L]
-"
-```    
+    ```
+    echo "
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/public/images/(.*)franky(.*)
+    RewriteCond %{REQUEST_URI} !/public/images/franky.png
+    RewriteRule /.* http://super.franky.ti2.com/public/images/franky.png [L]"
+    ```    
 2. konfigurasi file `/etc/apache2/sites-available/super.franky.ti2.com.conf` dengan     
-```
-echo "
-<VirtualHost *:80>
+    ```
+    echo "
+    <VirtualHost *:80>
 
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/super.franky.ti2.com
@@ -1139,19 +1165,19 @@ echo "
                 Options +FollowSymLinks -Multiviews
                 AllowOverride All
         </Directory>
-</VirtualHost>
-"
-```    
+    </VirtualHost>
+    "
+    ```    
 3. restart service apache2 dengan `service apache2 restart`  
 
 **Loguetown**     
 1. Ketikan command berikut pada Client
-```
-lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
-```
+    ```
+    lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
+    ```
 2. Program akan menampilkan seperti pada gambar. Pilih opsi D atau Download
-<img src="https://media.discordapp.net/attachments/759187114985652264/903914947803770900/unknown.png" width="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903914947803770900/unknown.png" width="500">
 3. Image akan terunduh
-<img src="https://media.discordapp.net/attachments/759187114985652264/903914670535094312/unknown.png" true="500">
+    <img src="https://media.discordapp.net/attachments/759187114985652264/903914670535094312/unknown.png" true="500">
 
 ## Kendala
