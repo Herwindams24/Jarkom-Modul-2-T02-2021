@@ -980,30 +980,6 @@ Dan Luffy meminta untuk web www.general.mecha.franky.yyy.com hanya bisa diakses 
     ```
 7. Restart Apache2
 
-1. Uji coba directory port 15500 dan 15000
-```
-lynx general.mecha.franky.ti2.com:15500
-```
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_01.png?raw=true" width="500">
-
-```
-lynx www.general.mecha.franky.ti2.com:15500
-```
-
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_02.png?raw=true" width="500">
-
-```
-lynx general.mecha.franky.ti2.com:15000
-```
-
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_03.png?raw=true" width="500">
-
-```
-lynx www.general.mecha.franky.ti2.com:15000
-```
-
-<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_04.png?raw=true" width="500">
-
 ## Nomor 15
 
 ### Soal
@@ -1057,7 +1033,29 @@ service apache2 restart
 ```   
 
 **Loguetown**   
+1. Uji coba directory port 15500 dan 15000
+```
+lynx general.mecha.franky.ti2.com:15500
+```
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_01.png?raw=true" width="500">
 
+```
+lynx www.general.mecha.franky.ti2.com:15500
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_02.png?raw=true" width="500">
+
+```
+lynx general.mecha.franky.ti2.com:15000
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_03.png?raw=true" width="500">
+
+```
+lynx www.general.mecha.franky.ti2.com:15000
+```
+
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/no14_04.png?raw=true" width="500">
 
 
 ## Nomor 16
@@ -1087,8 +1085,9 @@ Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.frank
 
 **Loguetown**    
 
-1. Ketikan `lynx 192.212.2.4`
-<img src="" width="">
+1. Ketikan `lynx 192.212.2.4` dan akan muncul seperti pada gambar
+<img src="https://user-images.githubusercontent.com/57980125/139524766-b42ea204-2ba3-4a9d-bd4a-80241291910f.png" width="500">
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/16_02.png?raw=true" width="500">
 
 
 ## Nomor 17
@@ -1150,6 +1149,9 @@ echo "
 ```
 lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
 ```
-<img src="" width="">
+2. Program akan menampilkan seperti pada gambar. Pilih opsi D atau Download
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/17_01.png?raw=true" width="500">
+3. Image akan terunduh
+<img src="https://github.com/Herwindams24/Jarkom-Modul-2-T02-2021/blob/main/Gambar/Loguetown/17_02.png?raw=true" true="500">
 
 ## Kendala
