@@ -1086,8 +1086,8 @@ Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.frank
 **Loguetown**    
 
 1. Ketikan `lynx 192.212.2.4` dan akan muncul seperti pada gambar
-<img src="" width="500">
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903916293068030013/unknown.png" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903915481122099210/unknown.png" width="500">
 
 
 ## Nomor 17
