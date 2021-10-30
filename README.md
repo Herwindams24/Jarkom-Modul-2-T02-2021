@@ -1150,8 +1150,8 @@ echo "
 lynx super.franky.ti2.com/public/images/HAHAfrankyYUHU
 ```
 2. Program akan menampilkan seperti pada gambar. Pilih opsi D atau Download
-<img src="" width="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903914947803770900/unknown.png" width="500">
 3. Image akan terunduh
-<img src="" true="500">
+<img src="https://media.discordapp.net/attachments/759187114985652264/903914670535094312/unknown.png" true="500">
 
 ## Kendala
