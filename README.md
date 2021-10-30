@@ -49,33 +49,33 @@ Kelompok T02
         
        * Node Alabasta (Client)
    
-        ```
-         auto eth0
-         iface eth0 inet static
+        	```
+         	auto eth0
+         	iface eth0 inet static
 	        address 192.212.1.3
 	        netmask 255.255.255.0
 	        gateway 192.212.1.1
-        ```
+        	```
         
        * Node EniesLobby (DNS Master)
    
-        ```
-         auto eth0
-         iface eth0 inet static
-	        address 192.212.2.2
+        	```
+        	auto eth0
+         	iface eth0 inet static
+	 	address 192.212.2.2
 	        netmask 255.255.255.0
 	        gateway 192.212.2.1
-        ```
+        	```
         
         * Node Water7 (DNS Slave)
    
-        ```
-         auto eth0
-         iface eth0 inet static
+        	```
+         	auto eth0
+         	iface eth0 inet static
 	        address 192.212.2.3
 	        netmask 255.255.255.0
 	        gateway 192.212.2.1
-        ```
+        	```
       
       * Node Skypie (Web Server)
    
